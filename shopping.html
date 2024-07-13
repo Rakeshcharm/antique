@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./shopbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    height: 500px;
+}
+
+.product {
+    background-color: antiquewhite;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.product img {
+    width: 100%;
+    height: 270px
+}
+
+.product h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.product p {
+    color: #666;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: auto
+}
+
+button:hover {
+    background-color: #555;
+}
+#buy{
+    text-decoration: none;
+    color: white;
+}
+#rate{
+ color: black;   
+}
+#navdiv{
+    display: flex;
+    color: antiquewhite;
+    background-color: black;
+    position: relative;
+    
+}
+li{
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 6px;
+}
+#navli{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.fix{
+    height: 50px;
+    width: 50px;
+}
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="navdiv" >
+            <ul>
+            <li type="button"><a id="navli"href="./index.html">Home</a></li>
+            <li type="button"><a id="navli" href="./contact.html">contact</a></li>
+            <li type="button">About</li>
+        </ul>
+        </div>
+    <main>
+        <section class="product">
+            <img class="fix" src="./fire launcher.jpg" alt="Product 1">
+            <h2>Fire launcher</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sit fugiat consequuntur at ab earum aspernatur vel et, odit ipsam! Eveniet laudantium dolorum, mollitia accusamus quisquam totam qui corporis velit.</p>
+            <p>Rs.40000</p>
+            <form action="checkout.php" method="POST">
+                <input type="hidden" name="product_id" value="1">
+                <button type="submit"><a id="buy" href="./customerdetail.html">Buy Now</a></button>
+            </form>
+        </section>
+
+        <section class="product">
+            <img class="fix" src="./telephone.jpg" alt="">
+            <h2>Telephone</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae vitae praesentium velit voluptatem amet eligendi! Dignissimos voluptatem delectus, libero fuga labore minus eaque sapiente reiciendis, est sit laborum quas!</p>
+            <p>Rs.8500</p>
+            <form action="checkout.php" method="POST">
+                <input type="hidden" name="product_id" value="2">
+                <button type="submit"><a id="buy" href="./customerdetail.html">Buy Now</a></button>
+            </form>
+        </section>
+
+        <section class="product">
+            <img class="fix" src="./bioscope.jpg" alt="Product 3">
+            <h2>Bioscope</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae vitae praesentium velit voluptatem amet eligendi! Dignissimos voluptatem delectus, libero fuga labore minus eaque sapiente reiciendis, est sit laborum quas!</p>
+            <p>Rs.4500</p>
+            <form action="checkout.php" method="POST">
+                <input type="hidden" name="product_id" value="2">
+                <button type="submit"><a id="buy" href="./customerdetail.html">Buy Now</a></button>
+            </form>
+        </section>
+
+        <section class="product">
+            <img class="fix" src="./binocular.jpg" alt="Product 4">
+            <h2>Binocular</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae vitae praesentium velit voluptatem amet eligendi! Dignissimos voluptatem delectus, libero fuga labore minus eaque sapiente reiciendis, est sit laborum quas!</p>
+            <p>Rs.4000</p>
+            <form action="checkout.php" method="POST">
+                <input type="hidden" name="product_id" value="2">
+                <button onclick=""><a id="buy" href="./customerdetail.html">Buy Now</a></button>
+            </form>
+        </section>
+
+        <section class="product">
+            <img class="fix" src="./iron box.jpg" alt="Product 5">
+            <h2>Ironbox</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae vitae praesentium velit voluptatem amet eligendi! Dignissimos voluptatem delectus, libero fuga labore minus eaque sapiente reiciendis, est sit laborum quas!</p>
+            <p>Rs.6000</p>
+            <form action="checkout.php" method="POST">
+                <input type="hidden" name="product_id" value="2">
+                <button type="submit"><a id="buy" href="./customerdetail.html">Buy Now</a></button>
+            </form>
+        </section>
+
+        <section class="product">
+            <img class="fix" src="./coin.jpg" alt="Product 6">
+            <h2>Coins</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae vitae praesentium velit voluptatem amet eligendi! Dignissimos voluptatem delectus, libero fuga labore minus eaque sapiente reiciendis, est sit laborum quas!</p>
+            <p>Rs.5000</p>
+            <form action="checkout.php" method="POST">
+                <input type="hidden" name="product_id" value="2">
+                <button type="submit"><a id="buy" href="./customerdetail.html">Buy Now</a></button>
+            </form>
+        </section>
+
+        <section class="product">
+            <img class="fix" src="./gun.jpg" alt="Product 7">
+            <h2>Gun</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae vitae praesentium velit voluptatem amet eligendi! Dignissimos voluptatem delectus, libero fuga labore minus eaque sapiente reiciendis, est sit laborum quas!</p>
+            <p>Rs.12000</p>
+            <form action="checkout.php" method="POST">
+                <input type="hidden" name="product_id" value="2">
+                <button type="submit"><a id="buy" href="./customerdetail.html">Buy Now</a></button>
+            </form>
+        </section>
+
+        <section class="product">
+            <img class="fix" src="./car.jpg" alt="Product 8">
+            <h2>Car</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae vitae praesentium velit voluptatem amet eligendi! Dignissimos voluptatem delectus, libero fuga labore minus eaque sapiente reiciendis, est sit laborum quas!</p>
+            <p>Rs.50000</p>
+            <form action="checkout.php" method="POST">
+                <input type="hidden" name="product_id" value="2">
+                <button type="submit"><a id="buy" href="./customerdetail.html">Buy Now</a></button>
+            </form>
+        </section>
+
+        <section class="product">
+            <img class="fix" src="./sword.jpg" alt="Product 9">
+            <h2>Sword</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae vitae praesentium velit voluptatem amet eligendi! Dignissimos voluptatem delectus, libero fuga labore minus eaque sapiente reiciendis, est sit laborum quas!</p>
+            <p>Rs.7000</p>
+            <form action="checkout.php" method="POST">
+                <input type="hidden" name="product_id" value="2">
+                <button type="submit"><a id="buy" href="./customerdetail.html">Buy Now</a></button>
+            </form>
+        </section>
+
+
+        <section class="product">
+            <img class="fix" src="./compas.jpg" alt="Product 10">
+            <h2>Compas</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae vitae praesentium velit voluptatem amet eligendi! Dignissimos voluptatem delectus, libero fuga labore minus eaque sapiente reiciendis, est sit laborum quas!</p>
+            <p>Rs.2000</p>
+            <form action="checkout.php" method="POST">
+                <input type="hidden" name="product_id" value="2">
+                <button type="submit"><a id="buy" href="./customerdetail.html">Buy Now</a></button>
+            </form>
+        </section>
+
+        <section class="product">
+            <img class="fix" src="./miniature.jpg" alt="Product 11">
+            <h2>Miniature</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae vitae praesentium velit voluptatem amet eligendi! Dignissimos voluptatem delectus, libero fuga labore minus eaque sapiente reiciendis, est sit laborum quas!</p>
+            <p>Rs.8000</p>
+            <form action="checkout.php" method="POST">
+                <input type="hidden" name="product_id" value="2">
+                <button type="submit"><a id="buy" href="./customerdetail.html">Buy Now</a></button>
+            </form>
+        </section>
+
+
+        <section class="product">
+            <img class="fix" src="./music player.jpg" alt="Product 12">
+            <h2>Music Player</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae vitae praesentium velit voluptatem amet eligendi! Dignissimos voluptatem delectus, libero fuga labore minus eaque sapiente reiciendis, est sit laborum quas!</p>
+            <p>Rs.6000</p>
+            <form action="checkout.php" method="POST">
+                <input type="hidden" name="product_id" value="2">
+                <button type="submit"><a id="buy" href="./customerdetail.html">Buy Now</a></button>
+            </form>
+        </section>
+
+       
+    </main>
+    <footer>
+        <p style="text-align: center; margin-top: 1300px;color: azure;">&copy; 2024 Buy Now Page</p>
+    </footer>
+</body>
+</html>

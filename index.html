@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" href="./29352.png">
+    <style>
+        body{
+    background-color: #ae5528de;
+}
+
+
+
+#navdiv{
+    display: flex;
+    color: antiquewhite;
+    background-color: black;
+    position: relative;
+    padding-top: 10px;
+    
+    
+}
+li{
+    display: inline-block;
+    padding: 5px;
+}
+
+
+#open{
+    background-repeat: no-repeat;
+    background-image: url(./bgim.jpg);
+    background-size:cover ;
+    background-attachment: local;
+    background-position-y: -60px;
+    height: 80vh;
+    position: relative;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#head{
+    color: #333;
+text-align: center;
+padding-top: 270px;
+padding-left: 20px;
+
+
+}
+#quote{
+    color: #333;
+    text-align: center;
+    font-weight: 800;
+    padding-left: 30px;
+    font-weight:900px;
+    margin-top: 50px;
+}
+/*button
+.butt{
+    border-radius: 5px;
+    position: absolute;
+    left: 744px;
+    top: 350px;
+    color:blanchedalmond;
+    background-color: black;
+}
+    */
+#collection{
+    text-align: center;
+    background-color:  rgba(171, 84, 40, 0.87);
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 0%;
+    margin: 0%;
+}
+#img{
+    display: flex;
+    text-align: center;
+    padding: 45px;
+    justify-content: center;
+    padding-left: 20px;
+    flex-wrap: wrap;
+    background-color: rgba(171, 84, 40, 0.87);
+    margin: 0%;
+    
+    
+}
+#image{
+    flex: 0 0 100px;
+    margin: 17px;
+    padding: 20px;
+   flex-wrap: wrap;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0px 3px 8px #333;
+    transition: all 300ms ease-in-out;
+}
+#productname{
+    color: black;
+    margin-top: 10px;
+    padding: 0px;
+    font: 1em sans-serif;
+}
+#image:hover{
+    transform: translateY(-10px);
+   
+    box-shadow: 0px 3px 30px black;
+     z-index: 1;
+}
+#link{
+    color: black;
+}
+#butt{
+   margin-left: 696px;
+   margin-top: 70px;
+}
+/*.custom-popover {
+    background-color: #f8f9fa;
+    color: #212529;
+    border: 1px solid #ced4da;
+}*/
+/*.topic{
+    margin: 0%;
+}*/
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.popup {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+.popup-content {
+    position: relative;
+    background-color: transparent;
+    margin: 15% auto; 
+    padding: 20px;
+   /* border: 1px solid #888;*/
+    width: 80%; 
+   /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);*/
+    animation: animatezoom 0.6s; 
+    color: wheat;
+}
+
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+#openPopup{
+    color: white;
+    background-color: #333;
+}
+#navli{
+    text-decoration: none;
+    color: antiquewhite;
+}
+#nav{
+    text-decoration: none;
+    color: antiquewhite;
+}
+    </style>
+    
+</head>
+<body>
+    <nav id="navbar">
+        <div id="navdiv">
+            <ul>
+                <li type="button">Home</li>
+                <li type="button"><a id="navli" href="./contact.html">Contact</a></li>
+                <li type="button"><a id="navli" href="./shopping.html">Shop</a></li>
+                <li type="button">About</li>
+            </ul>
+        </div>
+
+    </nav>
+    <div id="open">
+        <h1 id="head">ANTIQUE ARANMANAI</h1>
+        <div id="quote">"Our admiration of the antique is not admiration of the old, but of the natural"</div>
+        <!--<button type="button" id="butt"class="btn btn-secondary">Read more</button>-->
+        <!--<button type="button" id="butt" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Read More
+          </button>-->
+        <!-- <button type="button" id="butt" class="btn btn-secondary" 
+                data-bs-toggle="popover" 
+                data-bs-placement="top"
+                data-bs-custom-class="custom-popover"
+                data-bs-title="Custom Popover Title"
+                data-bs-content="This is a custom popover example. You can customize the content and appearance using CSS and data attributes.">
+            Click me for Popover on Top
+        </button>-->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="closePopup" class="close">&times;</span>
+                <p><h3 style="text-align: center;">Antique Aranmanai</h3>An antique is an old object with aesthetic, historic, and financial value. To be considered an antique, an object usually has to be more than 100 years old. It also must be artistically or historically significant. An antique is usually both beautiful and decorative. It may also have additional interest and value because of its relationship to a historical period or to some well-known person. George Washingtons teapot and dining room chairs, for example, are more valuable as antiques than are those that belonged to most other 18th-century Americans.
+
+                    All decorative objects of great age are not automatically designated as antiques. In most cases the term is reserved for objects that survived from Western European cultures and from post-medieval times. Older things are usually termed antiquities, and they are often characterized by the name of the culture in which they originated, such as classical, Egyptian, pre-Columbian, Near Eastern, or Oriental. All of these objects are studied, collected, and bought and sold by specialists.
+                    
+                    Antiques of all kinds are highly valued for their intrinsic beauty, craftsmanship, and quality of design. They may be made of rare materials such as gold or silver, but they may also be made of ordinary materials such as wood or paper. Most antiques are things that were originally used as household furnishings. These include furniture, silver, glass, ceramics, rugs, embroideries, and various kinds of metalware. In museums these objects represent the decorative arts. They are studied and exhibited in ways that are different from the ways in which the fine arts (paintings, prints, and sculpture, for example) are studied and presented.
+                    
+                    Antiques are studied by cultural and social historians, who see them as direct clues to a peoples way of life. Such scholars are less concerned with the beauty of a piece than with its typicality, craftsmanship, and role in the economic and social life of its owners. Washingtons teapot and dining room chairs are studied as examples of 18th-century pottery and furniture-making. They are also studied for their roles in daily life at Washingtons home, Mount Vernon. Such material culture studies have benefited private collectors greatly because the results have enhanced the associative or relic value of certain objects.
+                    </p>
+            </div>
+        </div>
+    
+        <div class="content">
+            <button id="openPopup" class="btn btn-secondary">Read More</button>
+        </div>
+    
+    </div>
+    
+    <h2 id="collection" class="topic">Antique Collection</h2>
+    <div id="img">
+        <div>
+       <img id="image" src="./fire launcher.jpg"></a>
+         <h3 id="productname">fire launch</h3>
+        </div>
+        <div>
+            <img id="image" src="./telephone.jpg">
+         <h3 id="productname">telephone</h3>
+        </div>
+        <div>
+            <img id="image" src="./bioscope.jpg"> 
+         <h3 id="productname">bioscope</h3>
+        </div>
+        <div>
+            <img id="image" src="./binocular.jpg"> 
+         <h3 id="productname">binocular</h3>
+        </div>
+        <div>
+            <img id="image" src="./iron box.jpg"> 
+         <h3 id="productname">iron box</h3>
+        </div>
+        <div>
+            <img id="image" src="./coin.jpg"> 
+         <h3 id="productname">coins  </h3>
+        </div>
+        <div>
+            <img id="image" src="./gun.jpg"> 
+         <h3 id="productname">guns
+         </h3>
+        </div>
+        <div>
+            <img id="image" src="./car.jpg"> 
+         <h3 id="productname">car</h3>
+        </div>
+        <div>
+            <img id="image" src="./sword.jpg"> 
+         <h3 id="productname">swords </h3>
+        </div>
+        <div>
+            <img id="image" src="./compas.jpg"> 
+         <h3 id="productname">compas </h3>
+        </div>
+        <div>
+            <img id="image" src="./miniature.jpg"> 
+         <h3 id="productname">miniature</h3>
+        </div>
+        <div>
+            <img id="image" src="./music player.jpg"> 
+         <h3 id="productname">music player</h3>
+        </div>
+       
+    </div>
+    <!--<script>
+        // Initialize popovers
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>-->
+    <script>document.addEventListener('DOMContentLoaded', () => {
+        const popup = document.getElementById('popup');
+        const openPopupBtn = document.getElementById('openPopup');
+        const closePopupBtn = document.getElementById('closePopup');
+    
+        
+        openPopupBtn.addEventListener('click', () => {
+            popup.style.display = 'block';
+        });
+    
+        
+        closePopupBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+    
+        
+        window.addEventListener('click', (event) => {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+    });
+    </script>
+
+</body>
+</html>
